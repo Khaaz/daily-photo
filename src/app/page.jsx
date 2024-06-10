@@ -1,5 +1,4 @@
 import {
-	Button,
 	Divider,
 	Flex,
 	Heading,
@@ -7,6 +6,7 @@ import {
 	NextLink,
 	Text,
 } from "@/components/chakra.jsx";
+import { CtaButton } from "@/components/cta-button.jsx";
 
 export default async function Page() {
 	return (
@@ -15,10 +15,10 @@ export default async function Page() {
 				<Flex flexDirection="row" w="100%" alignItems="center" justifyContent="space-between">
 					<Flex flexDirection="column">
 						<Heading fontSize="96px" fontWeight="bold" color="accent">{"Daily photo,"}</Heading>
-						<Heading fontSize="96px" fontWeight="bold" color="accent">{"c'est quoi?"}</Heading>
+						<Heading fontSize="96px" fontWeight="bold" color="accent">{"c'est quoi ?"}</Heading>
 						<Text fontSize="20px" mt="24px">54 challenges, 54 photos. Un site sur mesure pour renouer avec ta passion.</Text>
 					</Flex>
-					<Image src="/daily-photo.png" alt="Daily Photo logo" height="400px" />
+					<Image src="/daily-photo.png" alt="Daily Photo logo" height="400px" mr="5%"/>
 				</Flex>
 				<Divider />
 				<Flex flexDirection="column" w="100%" gap={8}>
@@ -37,7 +37,7 @@ export default async function Page() {
 							`Ce cadeau prend aussi en compte une aide sur l'installation et l'utilisation de logiciels de retouches photos, si l'envie te prend d'apprendre un peu plus cet art. (Voir plus dans l'onglet bonus).`
 						}
 					</Text>
-					<Button href={"/challenges"} as={NextLink} backgroundColor="accent" color="white" _hover={{ textDecoration: "none", backgroundColor: "white", color: "accent" }} fontSize="16px" fontWeight="bold" w="fit-content" p="16px">Commencer les challenges</Button>
+					<CtaButton href={"/challenges"} as={NextLink}>Commencer les challenges</CtaButton>
 				</Flex>
 			</Flex>
 		</>

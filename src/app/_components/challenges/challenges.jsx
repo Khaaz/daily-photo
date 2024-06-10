@@ -1,9 +1,9 @@
 "use client";
 
 import {
-	Button,
 	Flex,
 } from "@/components/chakra.jsx";
+import { CtaButton } from "@/components/cta-button.jsx";
 import { List } from "@/components/list.jsx";
 
 import { ChallengeCard } from "./challenge-card.jsx";
@@ -32,9 +32,9 @@ const Challenges = ( { challenges } ) => {
 
 	return (
 		<Flex flexDirection="column" gap="10">
-			<Button alignSelf="center" onClick={ () => console.log("click")} backgroundColor="accent" color="white" _hover={{ textDecoration: "none", backgroundColor: "white", color: "accent" }} fontSize="16px" fontWeight="bold" w="fit-content" p="16px">
+			<CtaButton alignSelf="center" onClick={ () => console.log("click")}>
 				Decouvrir les challenges
-			</Button>
+			</CtaButton>
 			<List>
 				{
 					challenges.map(e => (
