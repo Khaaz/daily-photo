@@ -3,7 +3,6 @@
 import {
 	Button,
 	Flex,
-	Text,
 } from "@/components/chakra.jsx";
 import { List } from "@/components/list.jsx";
 
