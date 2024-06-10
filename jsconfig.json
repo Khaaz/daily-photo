@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "checkJs": false,
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "target": "es2022",
+        "module": "es2015",
+        "baseUrl": ".",
+        "paths": {
+            "@/app/*": ["src/app/*"],
+            "@/components/*": ["src/components/*"],
+            "@/public/*": ["public/*"],
+            "@/styles/*": ["src/styles/*"]
+        }
+    },
+    "exclude": [
+        ".next",
+        ".npm",
+        ".vscode",
+        ".yarn",
+        "build",
+        "coverage",
+        "dist",
+        "node_modules"
+    ],
+    "typeAcquisition": {
+        "enable": true,
+        "include": ["react", "react-dom", "@chakra-ui/react"]
+    }
+}
