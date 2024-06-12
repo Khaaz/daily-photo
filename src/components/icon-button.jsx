@@ -7,7 +7,7 @@ const IconButton = ( { Icon, ...props } ) => (
 	<ChakraIconButton
 		w="fit-content"
 		p="1rem"
-		icon={<Icon boxSize="1.5rem" color="font"/>}
+		icon={<Icon boxSize="2.5rem" color="font"/>}
 		{...props}
 	/>
 );
