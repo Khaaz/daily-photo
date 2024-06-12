@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 import {
 	Flex,
 	Text,
@@ -12,8 +14,11 @@ import { pickChallenge, resetChallenges } from "../action.js";
 import { ChallengeCard } from "./challenge-card.jsx";
 
 const Challenges = ( { challenges } ) => {
-	const daysSince = daysSinceDate();
-	const remainingPicks = daysSince - challenges.length;
+	const [remainingPicks, setRemainingPicks] = useState(null);
+	useEffect(
+		() => setRemainingPicks(daysSinceDate() - challenges.length),
+		[challenges]
+	  );
 
 	return (
 		<Flex flexDirection="column" gap="10">
