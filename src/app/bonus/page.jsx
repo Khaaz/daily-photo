@@ -1,4 +1,3 @@
-
 import {
 	Avatar,
 	Flex,
@@ -16,7 +15,7 @@ export default async function Page() {
 			</Text>
 			<Flex flexDirection={{ base: "column", lg: "row" }} justifyContent="center" alignItems="center" w="100%" gap="5rem">
 				<Flex flexDirection="column"
-					justifyContent="center" alignItems="center"
+					justifyContent="space-between" alignItems="center"
 					gap="2rem"
 					w="100%"
 					border="2px solid"
@@ -43,7 +42,7 @@ export default async function Page() {
 					<CtaButton>Beneficier</CtaButton>
 				</Flex>
 				<Flex flexDirection="column"
-					justifyContent="center" alignItems="center"
+					justifyContent="space-between" alignItems="center"
 					gap="2rem"
 					w="100%"
 					border="2px solid"
