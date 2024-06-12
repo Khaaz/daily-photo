@@ -9,7 +9,7 @@ import { CtaButton } from "@/components/cta-button.jsx";
 export default async function Page() {
 	return (
 		<Flex flexDirection="column" w="100%">
-			<Heading color="accent" fontSize="64px" pb="40px">Bonus</Heading>
+			<Heading color="accent" fontSize="64px">Bonus</Heading>
 			<Text fontSize="16px" py="40px">
 				Ton cadeau comprend des bonus. Tu pourras avoir accès à celui de ton choix au bout de 10 challenges complétés. Puis le deuxièmes au bout de 20 challenges complétés.
 			</Text>
