@@ -1,17 +1,16 @@
-import { fetchChallenges } from "src/datastore/lib";
-
 import {
 	Flex,
 	Heading,
 	Text,
 } from "@/components/chakra.jsx";
+import { fetchChallenges } from "@/datastore/lib.js";
 
 import { Challenges } from "./_components/challenges.jsx";
 
 export async function getServerSideData() {
 	const challenges = await fetchChallenges();
 
-	return challenges;
+	return challenges.filter(c => c.picked).sort( (a, b) => a.id - b.id);
 }
 
 export default async function Page() {

@@ -9,6 +9,9 @@
         "paths": {
             "@/app/*": ["src/app/*"],
             "@/components/*": ["src/components/*"],
+            "@/datastore/*": ["src/datastore/*"],
+            "@/configs/*": ["src/configs/*"],
+            "@/helpers/*": ["src/helpers/*"],
             "@/public/*": ["public/*"],
             "@/styles/*": ["src/styles/*"]
         }

@@ -2,44 +2,38 @@
 
 import {
 	Flex,
+	Text,
 } from "@/components/chakra.jsx";
 import { CtaButton } from "@/components/cta-button.jsx";
 import { List } from "@/components/list.jsx";
+import { daysSinceDate } from "@/helpers/date.js";
 
-import { fetchChallenge } from "../action.js";
+import { pickChallenge, resetChallenges } from "../action.js";
 import { ChallengeCard } from "./challenge-card.jsx";
 
 const Challenges = ( { challenges } ) => {
-	// const [items, setItems] = useState( [] );
-	// const [loading, setLoading] = useState(true);
-
-	// useEffect( () => {
-	// 	async function getData() {
-	// 		const data = await fetchItems();
-	// 		setItems(data);
-	// 		setLoading(false);
-	// 	}
-	// 	getData();
-	// }, [] );
-
-	// const handleAddItem = async() => {
-	// 	const newItem = { name: "New Item", createdAt: new Date() };
-	// 	await addItem(newItem);
-	// 	const data = await fetchItems();
-	// 	setItems(data);
-	// };
-	
-	console.log(challenges);
+	const daysSince = daysSinceDate();
+	const remainingPicks = daysSince - challenges.length;
 
 	return (
 		<Flex flexDirection="column" gap="10">
-			<CtaButton alignSelf="center" onClick={fetchChallenge}>
-				Decouvrir les challenges
-			</CtaButton>
+			<Flex flexDirection="row" justifyContent="center" gap="10">
+				<CtaButton alignSelf="center" onClick={() => pickChallenge()}>
+					Decouvrir les challenges
+				</CtaButton>
+				{
+					remainingPicks > 0
+						? <Text>{remainingPicks} challenges disponibles</Text>
+						: <Text>{`"Mange déja ca", tu n'a plus de challenges disponibles pour le moment, reviens demain`}</Text>
+				}
+				<CtaButton alignSelf="center" backgroundColor="incorrect" onClick={() => resetChallenges()}>
+					Reset
+				</CtaButton>
+			</Flex>
 			<List>
 				{
 					challenges.map(e => (
-						<ChallengeCard key={e.id} challenge={e} />
+						<ChallengeCard key={e._id} challenge={e} />
 					)	)
 				}
 			</List>
