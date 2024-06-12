@@ -3,9 +3,10 @@ import { fetchChallenges } from "src/datastore/lib";
 import {
 	Flex,
 	Heading,
+	Text,
 } from "@/components/chakra.jsx";
 
-import { Challenges } from "../_components/challenges/challenges.jsx";
+import { Challenges } from "./_components/challenges.jsx";
 
 export async function getServerSideData() {
 	const challenges = await fetchChallenges();
@@ -18,7 +19,12 @@ export default async function Page() {
 
 	return (
 		<Flex flexDirection="column" w="100%">
-			<Heading color="accent" fontSize="64px" pb="40px">Les challenges</Heading>
+			<Heading color="accent" fontSize="64px">Les challenges</Heading>
+			<Text fontSize="16px" py="40px">
+				{
+					"Les thèmes imposés ici sont très larges. Ils te permettent surtout de te donner une direction sans te restreindre. Interprète les comme tu veux et laisse libre cours à ton imagination. N'hésite donc surtout pas à tester des choses et expérimenter."
+				}
+			</Text>
 			<Challenges challenges={challenges}/>
 		</Flex>
 	);

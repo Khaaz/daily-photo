@@ -6,6 +6,7 @@ import {
 import { CtaButton } from "@/components/cta-button.jsx";
 import { List } from "@/components/list.jsx";
 
+import { fetchChallenge } from "../action.js";
 import { ChallengeCard } from "./challenge-card.jsx";
 
 const Challenges = ( { challenges } ) => {
@@ -32,7 +33,7 @@ const Challenges = ( { challenges } ) => {
 
 	return (
 		<Flex flexDirection="column" gap="10">
-			<CtaButton alignSelf="center" onClick={ () => console.log("click")}>
+			<CtaButton alignSelf="center" onClick={fetchChallenge}>
 				Decouvrir les challenges
 			</CtaButton>
 			<List>

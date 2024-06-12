@@ -23,7 +23,7 @@ const ChallengeCard = ( { challenge } ) => (
 			<Text fontSize="24px" fontWeight="bold">{challenge.name}</Text>
 			<Text fontSize="16px">{challenge.description}</Text>
 		</Flex>
-		<IconButton my="auto" onClick={( () => console.log("click") ) } Icon={challenge.done ? CheckOnIcon : CheckOffIcon}/>
+		<IconButton onClick={( () => console.log("click") ) } Icon={challenge.done ? CheckOnIcon : CheckOffIcon} background="transparent" my="auto"/>
 	</Flex>
 
 );
