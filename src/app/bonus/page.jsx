@@ -22,7 +22,7 @@ export default async function Page() {
 					borderColor= "accent"
 					borderRadius="8px"
 					p="1.5rem"
-					h="40rem"
+					h={{ base: "fit-content", lg: "45rem", xl: "40rem" }}
 				>
 					<Avatar
 						size={"2xl"}
@@ -49,7 +49,7 @@ export default async function Page() {
 					borderColor= "accent"
 					borderRadius="8px"
 					p="1.5rem"
-					h="40rem"
+					h={{ base: "fit-content", lg: "45rem", xl: "40rem" }}
 				>
 					<Avatar
 						size={"2xl"}
