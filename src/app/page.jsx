@@ -11,11 +11,11 @@ import { CtaButton } from "@/components/cta-button.jsx";
 export default async function Page() {
 	return (
 		<>
-			<Flex flexDirection="column" w="100%" gap={"4%"}>
-				<Flex flexDirection="row" w="100%" alignItems="center" justifyContent="space-between">
+			<Flex flexDirection="column" w="100%" gap="3.5rem" pb="5rem">
+				<Flex flexDirection={{ base: "column", lg: "row" }} w="100%" alignItems="center" justifyContent="space-between">
 					<Flex flexDirection="column">
-						<Heading fontSize="96px" fontWeight="bold" color="accent">{"Daily photo,"}</Heading>
-						<Heading fontSize="96px" fontWeight="bold" color="accent">{"c'est quoi ?"}</Heading>
+						<Heading fontSize={{ base: "70px", lg: "96px" }} fontWeight="bold" color="accent">{"Daily photo,"}</Heading>
+						<Heading fontSize={{ base: "70px", lg: "96px" }} fontWeight="bold" color="accent">{"c'est quoi ?"}</Heading>
 						<Text fontSize="20px" mt="24px">54 challenges, 54 photos. Un site sur mesure pour renouer avec ta passion.</Text>
 					</Flex>
 					<Image src="/daily-photo.png" alt="Daily Photo logo" height="400px" mr="5%"/>
