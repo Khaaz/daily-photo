@@ -13,7 +13,7 @@ export default async function Page() {
 			<Heading color="accent" fontSize="64px">Profil</Heading>
 			
 			<Flex flexDirection={{ base: "column", lg: "row" }} gap="50px">
-				<Image src="/profile_full.jpg" alt="Profile full picture" height="65vh"/>
+				<Image src="/profile_full.jpg" alt="Profile full picture" height="65vh" borderRadius="8px"/>
 				<Flex flexDirection="column" gap="32px">
 
 					{/* section */}
