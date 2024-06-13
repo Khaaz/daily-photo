@@ -12,3 +12,9 @@ export function daysSinceDate() {
     
 	return daysDifference;
 }
+
+export function pickRandom(arr) {
+	const randomIndex = Math.floor(Math.random() * arr.length);
+
+	return arr[randomIndex];
+}

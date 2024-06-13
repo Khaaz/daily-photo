@@ -12,7 +12,7 @@ const CtaButton = ( {
 		fontSize="16px"
 		fontWeight="bold"
 		w="fit-content"
-		p="20px"
+		p="30px"
 		{...props}>
 		{children}
 	</Button>

@@ -56,3 +56,11 @@ export const CHALLENGES_DESCRIPTIONS = [
 	"La dissonance",
 	"L'équilibre",
 ];
+
+export const CHALLENGE_SUCCESS = [
+	"Attention ! Le repos c'est important !",
+	"Moi j'ai un copain...",
+	"La Dazen me surveille ?",
+	"De toute façon une fois que t'es mouillé !",
+	"Quand t'es dedans elle est bonne !",
+];
