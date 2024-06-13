@@ -25,7 +25,7 @@ const Header = () => {
 	const [isOpen, setValue] = useState(false);
 
 	return 	(
-		<Box display={{ base: "block", lg: "flex" }} w="100%" justifyContent="space-between" alignItems="center" p={10} zIndex="100" position="sticky" top="0" backgroundColor="color-mix(in srgb, var(--chakra-colors-bg) 90%, transparent)">
+		<Box display={{ base: "block", lg: "flex" }} w="100%" justifyContent="space-between" alignItems="center" px={10} py={2} zIndex="100" position="sticky" top="0" backgroundColor="color-mix(in srgb, var(--chakra-colors-bg) 90%, transparent)">
 			<Flex flexGrow={{ base: 1, lg: 0 }} justifyContent="space-between">
 				<Flex my="auto">
 					<LinkContainer href="/">
@@ -49,13 +49,15 @@ const Header = () => {
 					<NavLink href={"/challenges"} text="Challenges" />
 					<NavLink href={"/bonus"} text="Bonus" />
 				</Flex>
-				<Flex flexDirection={{ base: "row", lg: "column" }} w="100%" justifyContent={{ base: "flex-start", lg: "center" }} alignItems="center" mx={{ md: 15 }} my={{ base: 2, md: 0 }} px="0.7rem" py="0.4rem">
-					<Avatar
-						size={"lg"}
-						src={"/profile_pic.png"}
-					/>
-					<Text>Micka</Text>
-				</Flex>
+				<LinkContainer href="/profile">
+					<Flex flexDirection={{ base: "row", lg: "column" }} w="100%" justifyContent={{ base: "flex-start", lg: "center" }} alignItems="center" mx={{ md: 15 }} my={{ base: 2, md: 0 }} px="0.7rem" py="0.4rem">
+						<Avatar
+							size={"lg"}
+							src={"/profile_pic.png"}
+						/>
+						<Text>Micka</Text>
+					</Flex>
+				</LinkContainer>
 			</Box>
 		</Box>
 			
