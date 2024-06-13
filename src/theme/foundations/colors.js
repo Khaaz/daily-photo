@@ -4,6 +4,9 @@ export const colors = {
 	
 	font: "#ffffff",
 	
-	correct: "#00FF00",
-	incorrect: "#FF0000",
+	correct: "#009444",
+	incorrect: "#941200",
+
+	bonus_1: "#DA8AFF",
+	bonus_2: "#00D2D2",
 };
