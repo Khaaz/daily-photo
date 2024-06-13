@@ -51,8 +51,8 @@ const Header = () => {
 				</Flex>
 				<Flex flexDirection={{ base: "row", lg: "column" }} w="100%" justifyContent={{ base: "flex-start", lg: "center" }} alignItems="center" mx={{ md: 15 }} my={{ base: 2, md: 0 }} px="0.7rem" py="0.4rem">
 					<Avatar
-						size={"md"}
-						src={"https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png"}
+						size={"lg"}
+						src={"/profile_pic.png"}
 					/>
 					<Text>Micka</Text>
 				</Flex>
