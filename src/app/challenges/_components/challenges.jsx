@@ -47,6 +47,7 @@ const Challenges = ( { challenges, total, done } ) => {
 				<Flex flexDirection="column" justifyContent="center" alignItems="center"
 					gap="12px"
 					p="16px"
+					boxShadow= "0 0px 8px var(--chakra-colors-white)"
 					border="1px solid"
 					borderColor= "white"
 					borderRadius="8px">

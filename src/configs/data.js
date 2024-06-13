@@ -63,4 +63,7 @@ export const CHALLENGE_SUCCESS = [
 	"La Dazen me surveille ?",
 	"De toute façon une fois que t'es mouillé !",
 	"Quand t'es dedans elle est bonne !",
+	"C'est philosophique !",
+	"Ca va revenir a la mode...",
+	"C'est Peter Gabriel qui a inventé ca !",
 ];

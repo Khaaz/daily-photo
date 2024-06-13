@@ -39,7 +39,8 @@ const ChallengeCard = ( { challenge } ) => {
 			h="150px"
 			w="300px"
 			p="16px"
-			border="2px solid"
+			boxShadow= "0 0px 8px var(--chakra-colors-white)"
+			border="1px solid"
 			borderColor= "white"
 			borderRadius="8px">
 			<Flex flexDirection="column" gap={3}>

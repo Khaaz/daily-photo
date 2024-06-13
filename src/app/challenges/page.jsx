@@ -24,7 +24,7 @@ export default async function Page() {
 			<Heading color="accent" fontSize="64px">Les challenges</Heading>
 			<Text fontSize="16px" py="40px">
 				{
-					"Tu disposes d'un challenge par jour qui se cumulent à compter du 12 juin. Les thèmes imposés ici sont très larges. Ils te permettent surtout de te donner une direction sans te restreindre. Interprète les comme tu veux et laisse libre cours à ton imagination. N'hésite donc surtout pas à tester des choses et expérimenter."
+					"Tu disposes d'un challenge par jour qui se cumule à compter du 12 juin. Les thèmes imposés ici sont très larges. Ils te permettent surtout de te donner une direction sans te restreindre. Interprète les comme tu veux et laisse libre cours à ton imagination. N'hésite donc surtout pas à tester des choses et expérimenter."
 				}
 			</Text>
 			<Challenges challenges={challenges} total={total} done={done}/>
