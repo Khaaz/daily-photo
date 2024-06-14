@@ -1,4 +1,4 @@
-export const FIXED_DATE = new Date(2024, 5, 1); // month is 0 based
+export const FIXED_DATE = new Date(2024, 5, 12); // month is 0 based
 
 export const CHALLENGES_DESCRIPTIONS = [
 	"Une photo d'un animal",

@@ -12,7 +12,7 @@ import { List } from "@/components/list.jsx";
 import { Modal } from "@/components/modal.jsx";
 import { daysSinceDate } from "@/helpers/date.js";
 
-import { pickChallenge, resetChallenges } from "../action.js";
+import { pickChallenge } from "../action.js";
 import { ChallengeCard } from "./challenge-card.jsx";
 
 const Challenges = ( { challenges, total, done } ) => {
@@ -41,9 +41,9 @@ const Challenges = ( { challenges, total, done } ) => {
 					valid={false}
 					text={"Mange déja ca !! Tu n'as plus de challenges disponibles pour le moment, reviens demain !"}
 				/>
-				<CtaButton backgroundColor="incorrect" onClick={() => resetChallenges()}>
+				{/* <CtaButton backgroundColor="incorrect" onClick={() => resetChallenges()}>
 					Reset
-				</CtaButton>
+				</CtaButton> */}
 				<Flex flexDirection="column" justifyContent="center" alignItems="center"
 					gap="12px"
 					p="16px"

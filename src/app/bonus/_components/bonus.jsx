@@ -40,7 +40,7 @@ const Bonus = ( {
 			<Text fontSize="16px" fontWeight="bold">
 				{headline}
 			</Text>
-			<CtaButton onClick={onOpen}>Beneficier</CtaButton>
+			<CtaButton onClick={onOpen}>Bénéficier</CtaButton>
 			<Modal isOpen={isOpen} onClose={onClose}
 				valid={valid}
 				text={valid ? modalText : `Bwaaaap, petit tricheur, tu n'as pas encore complété les ${requiredNumber} challenges requis !`}
